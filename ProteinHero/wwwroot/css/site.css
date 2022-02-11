@@ -4,6 +4,20 @@ body {
 }
 
 header {
-    background-color: red;
-    height: 200px;
+    background-color: red;    
+    height: 150px;
+}
+
+.flash-msg{
+    background-color:orange;
+}
+header nav {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+header nav a{
+    background-color:deepskyblue;
+    padding: 30px;
 }
