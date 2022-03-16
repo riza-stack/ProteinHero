@@ -34,6 +34,16 @@ namespace ProteinHero.Controllers
             return View();
         }
 
+        [HttpPost]
+        [Route("contact")]
+        public IActionResult Contact(Person person)
+        {
+            ViewData["voornaam"] = person.FirstName;
+            ViewData["achternaam"] = person.LastName;
+
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

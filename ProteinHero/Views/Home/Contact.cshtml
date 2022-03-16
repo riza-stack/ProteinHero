@@ -1,7 +1,23 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
+﻿@model Person
+@{
+    ViewData["Title"] = "Contact";
 }
+<h1>@ViewData["Title"]</h1>
 
-<h1>
-    Contact
-</h1>
+<form method="">
+    <div>
+        @Html.LabelFor(m=> m.FirstName)
+        @Html.TextBoxFor(m=> m.FirstName)
+        @Html.ValidationMessageFor(m=> m.FirstName)
+    </div>
+
+     <div>
+        @Html.LabelFor(m=> m.LastName)
+        @Html.TextBoxFor(m=> m.LastName)
+        @Html.ValidationMessageFor(m=> m.LastName)
+    </div>
+   
+    
+    <input type="submit" value="opslaan" />
+</form>
+
