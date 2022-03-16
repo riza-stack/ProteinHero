@@ -16,6 +16,20 @@
         @Html.TextBoxFor(m=> m.LastName)
         @Html.ValidationMessageFor(m=> m.LastName)
     </div>
+
+     <div>
+        @Html.LabelFor(m=> m.Email)
+        @Html.TextBoxFor(m=> m.Email)
+        @Html.ValidationMessageFor(m=> m.Email)
+    </div>
+
+       <div>
+        @Html.LabelFor(m=> m.Phone)
+        @Html.TextBoxFor(m=> m.Phone)
+        @Html.ValidationMessageFor(m=> m.Phone)
+    </div>
+   
+    
    
     
     <input type="submit" value="opslaan" />

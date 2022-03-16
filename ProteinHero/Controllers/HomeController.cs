@@ -38,8 +38,7 @@ namespace ProteinHero.Controllers
         [Route("contact")]
         public IActionResult Contact(Person person)
         {
-            ViewData["voornaam"] = person.FirstName;
-            ViewData["achternaam"] = person.LastName;
+           
 
             return View();
         }
