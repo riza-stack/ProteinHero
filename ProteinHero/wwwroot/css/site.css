@@ -1,4 +1,5 @@
 ﻿
+
 body {
     margin: 0;
     background-color: #F5F5F5;
@@ -9,7 +10,7 @@ footer {
 }
 
 header {
-    background-color: #63B7BD;    
+    background-color: #63B7BD;
 }
 
 .flash-msg{
@@ -19,7 +20,7 @@ header {
 header nav {
     display: flex;
     padding: 10px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 header nav a{
