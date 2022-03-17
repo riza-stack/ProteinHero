@@ -27,3 +27,12 @@ header nav a{
     background-color:#F5F5F5;
     padding: 30px;
 }
+
+h1 {
+    padding: 0px;
+    text-align: center;
+    margin-left: 800px;
+    margin-right: 800px;
+    border: 2px solid black;
+}
+
