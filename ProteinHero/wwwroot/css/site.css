@@ -7,6 +7,7 @@ body {
 
 footer {
     background-color: #48858A;
+    color: white;
 }
 
 header {
@@ -17,6 +18,7 @@ header {
     background-color:#48858A;
     text-align:center;
     color: white;
+    font-size: larger;
 }
 header nav {
     display: flex;
@@ -51,5 +53,7 @@ h3 {
     text-align: center;
     margin-left: 900px;
     margin-right: 900px;
+    padding: 10px;
     background-color: #63B7BD;
+    color: white;
 }
