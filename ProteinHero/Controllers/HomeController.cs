@@ -39,9 +39,7 @@ namespace ProteinHero.Controllers
         [Route("contact")]
         public IActionResult Contact(Person person)
         {
-           
-
-            return View();
+            return View(person);
         }
 
 
