@@ -6,7 +6,7 @@ body {
 }
 
 footer {
-    background-color: #007599;
+    background-color: #48858A;
 }
 
 header {
@@ -14,8 +14,9 @@ header {
 }
 
 .flash-msg{
-    background-color:#007599;
+    background-color:#48858A;
     text-align:center;
+    color: white;
 }
 header nav {
     display: flex;
@@ -26,6 +27,7 @@ header nav {
 header nav a{
     background-color:#F5F5F5;
     padding: 30px;
+    color: black;
 }
 
 h1 {
