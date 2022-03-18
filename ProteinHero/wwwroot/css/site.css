@@ -58,8 +58,15 @@ h3 {
     color: white;
 }
 
-div{
-    font-family:Roboto;
-    text-align: center;
+.contactForm  > div {
+    font-family: Roboto;
 }
 
+.contactForm label {
+    width: 200px;
+    display: inline-block;
+
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+}
