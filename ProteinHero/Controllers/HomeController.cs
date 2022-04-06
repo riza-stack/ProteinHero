@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProteinHero.Models;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using ProteinHero.Database;
 
 namespace ProteinHero.Controllers
 {
@@ -21,7 +19,17 @@ namespace ProteinHero.Controllers
        
         public IActionResult Index()
         {
-            return View();
+            var rows = DatabaseConnector.GetRows("select * from product");
+
+            List<string> names = new List<string>();
+
+            foreach (var row in rows)
+
+            {
+                names.Add(row["naam"].ToString());               
+            }
+
+            return View(names);
         }
 
         public IActionResult Privacy()
