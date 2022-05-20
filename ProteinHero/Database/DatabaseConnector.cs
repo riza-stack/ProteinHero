@@ -1,10 +1,9 @@
-﻿
-        using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 
 namespace ProteinHero.Database
-    {
-        public static class DatabaseConnector
+{
+    public static class DatabaseConnector
         {
 
             public static List<Dictionary<string, object>> GetRows(string query)
