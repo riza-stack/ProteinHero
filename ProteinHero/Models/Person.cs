@@ -16,6 +16,9 @@ namespace ProteinHero.Models
         [Required]
         [Display(Name = "Email adres")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "telefoonnummer")]
         public string Phone { get; set; }
         [Required]
         [Display(Name = "Postcode")]
