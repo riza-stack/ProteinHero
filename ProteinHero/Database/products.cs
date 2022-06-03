@@ -11,9 +11,12 @@ namespace ProteinHero.Database
 
         public string? Naam { get; set; }
 
-        public string? Prijs { get; set; }
+        public string? Beschrijving{ get; set; }
+        public string? Info { get; set; }
 
-        public int Beschikbaarheid { get; set; }
+        public string? Img { get; set; }
+
+        //public int Beschikbaarheid { get; set; }
     }
 
 }

@@ -52,7 +52,7 @@ namespace ProteinHero.Controllers
 
         public List<Product> GetAllproducts()
         {
-            var rows = DatabaseConnector.GetRows("select * from product");
+            var rows = DatabaseConnector.GetRows("select * from producten");
 
             List<Product> products = new List<Product>();
 
@@ -61,8 +61,9 @@ namespace ProteinHero.Controllers
 
                 Product p = new Product();
                 p.Naam = row["naam"].ToString();
-                p.Prijs = row["prijs"].ToString();
-                p.Beschikbaarheid = Convert.ToInt32(row["beschikbaarheid"]);
+                p.Beschrijving = row["beschrijving"].ToString();
+                p.Info= row["product informatie"].ToString();
+                p.Img = row["img"].ToString();
                 p.Id = Convert.ToInt32(row["id"]);
 
                 products.Add(p);
