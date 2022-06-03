@@ -70,3 +70,7 @@ h3 {
     display: table-cell;
     vertical-align: middle
 }
+
+.product img{
+    width: 200px;
+}
