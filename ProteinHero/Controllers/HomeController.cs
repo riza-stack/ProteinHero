@@ -36,11 +36,21 @@ namespace ProteinHero.Controllers
             return View();
         }
 
-        [HttpPost]
         [Route("contact")]
+        [HttpPost]
         public IActionResult Contact(Person person)
         {
+            if (ModelState.IsValid)
+                return Redirect("/Succes");
+
             return View(person);
+        }
+
+        [Route("Succes")]
+        public IActionResult Succes()
+        {
+
+            return View();
         }
 
 
