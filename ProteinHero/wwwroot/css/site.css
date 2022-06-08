@@ -74,6 +74,7 @@ h3 {
 .products{
     display: flex;
     flex-wrap: wrap;
+    gap: 100px;
 }
 
 .product{
