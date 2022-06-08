@@ -71,6 +71,17 @@ h3 {
     vertical-align: middle
 }
 
-.product img{
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product{
+    border: 2px solid black;
+    width: 30%;
+    flex: 1;
+}
+
+.product img {
     width: 200px;
 }
