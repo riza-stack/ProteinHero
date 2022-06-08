@@ -4,9 +4,8 @@
     ViewData["Title"] = "Startpagina";
 }
 
-<div class="text-center">
-     <h1 class ="display-4">Welkom</h1>
-     <ul>
+<h1 class ="display-4">Welkom</h1>
+<div class="products">     
      @foreach (var product in Model)
     {
         <a class="product" href="/product/@product.Id">
@@ -15,7 +14,7 @@
             <img src="@product.Img"/>
         </a>
     }
-     </ul>
 </div>
+
 <h3>Nieuw!</h3>
 
