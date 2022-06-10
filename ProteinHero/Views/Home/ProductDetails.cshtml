@@ -1,0 +1,14 @@
+﻿@using ProteinHero.Database
+@model Product
+@{
+    ViewData["Title"] = Model.Naam;
+}
+
+<div class ="text-center">
+<h1 class ="display-4">@Model.Naam</h1>
+<p>@Model.Info</p>
+
+
+<div class ="text-center">
+<p>@Model.Beschrijving</p>
+

@@ -68,21 +68,23 @@ h3 {
 
     min-height: 10em;
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .products{
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 150px;
 }
 
 .product{
     border: 2px solid black;
     width: 30%;
     flex: 1;
+    height: 500px;
 }
 
 .product img {
     width: 200px;
+    height: auto;
 }
