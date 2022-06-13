@@ -83,25 +83,30 @@ h3 {
     border: 2px solid #dddddd;
     width: 300px;
     color: black;
-    height: 140px;
+    height: 200px;
+    background-color: white;
     padding: 20px 20px 10px 20px;
     text-decoration: none;
-    display: flex;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     align-items: flex-end;
     justify-content: center;
-    position:relative;
+    position: relative;
+    background-repeat: no-repeat;
 }
 
     .product .product-name {
         background-color: #a4a4a450;
-        color: black;
+        color: #484848;
         font-weight: bold;
         position: absolute;
         left: 0;
         width: 100%;
+        font-size: 14px;
         bottom: 0;
+        text-align: center;
+        margin: 0;
+        padding: 10px 20px;
     }
 
 .detail3 img {
