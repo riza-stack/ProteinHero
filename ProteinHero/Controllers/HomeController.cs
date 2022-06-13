@@ -17,7 +17,7 @@ namespace ProteinHero.Controllers
             _logger = logger;
         }
 
-       
+
         public IActionResult Index()
         {
             var products = GetAllproducts();
@@ -53,6 +53,13 @@ namespace ProteinHero.Controllers
             return View();
         }
 
+        [Route("product/{id}")]
+        public IActionResult ProductDetails(int id)
+        {
+            var product = GetProduct(id);
+
+            return View(product);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -72,7 +79,7 @@ namespace ProteinHero.Controllers
                 Product p = new Product();
                 p.Naam = row["naam"].ToString();
                 p.Beschrijving = row["beschrijving"].ToString();
-                p.Info= row["product informatie"].ToString();
+                p.Info = row["product informatie"].ToString();
                 p.Img = row["img"].ToString();
                 p.Id = Convert.ToInt32(row["id"]);
 
@@ -83,8 +90,26 @@ namespace ProteinHero.Controllers
 
         }
 
+        public Product GetProduct(int id)
+        {
 
+            var rows = DatabaseConnector.GetRows($"select * from producten where id = {id}");
 
+            List<Product> products = new List<Product>();
+
+            foreach (var row in rows)
+            {
+                Product p = new Product();
+                p.Naam = row["naam"].ToString();
+                p.Beschrijving = row["beschrijving"].ToString();
+                p.Info = row["product informatie"].ToString();
+                p.Img = row["img"].ToString();
+                p.Id = Convert.ToInt32(row["id"]);
+                products.Add(p);
+            }
+
+            return products[0];
+        }
     }
 
     
