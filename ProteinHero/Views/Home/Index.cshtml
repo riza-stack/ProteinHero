@@ -8,10 +8,8 @@
 <div class="products">     
      @foreach (var product in Model)
     {
-        <a class="product" href="/product/@product.Id">
-            <p>@product.Naam</p>
-
-            <img src="@product.Img"/>
+        <a class="product" href="/product/@product.Id" style="background-image:url(@product.Img)">
+            <p class="product-name">@product.Naam</p>
         </a>
     }
 </div>
